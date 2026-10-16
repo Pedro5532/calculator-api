@@ -22,11 +22,15 @@
 
 ## Error codes
 
-200: success
-403: forbidden(happens when powering by numbers higher that 1000)
-404: bad request(happens when param/params is/are missing or isn't/aren't numbers)
-404: not found
-422: unprocessable content(happens when dividing by 0)
+<code>200</code>: success
+
+<code>403</code>: forbidden(happens when powering by numbers higher that 1000)
+
+<code>404</code>: bad request(happens when param/params is/are missing or isn't/aren't numbers)
+
+<code>404</code>: not found
+
+<code>422</code>: unprocessable content(happens when dividing by 0)
 
 ## Required request params
 
