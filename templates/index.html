@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator API Docs</title>
+	<style>body {background-color: #212121; color: #ffffff}</style>
+</head>
+<body>
+    <h1>Calculator API Docs</h1>
+	<h2>CURL Examples</h2>
+	<code>
+	~ $ curl "pedro5532.pythonanywhere.com/api/calculate/add?firstNumber=6&amp;secondNumber=8"</br>
+	14</br>
+	~ $ curl "pedro5532.pythonanywhere.com/api/calculate/subtract?firstNumber=9&amp;secondNumber=14"</br>
+	-5</br>
+	~ $ curl "pedro5532.pythonanywhere.com/api/calculate/multiply?firstNumber=-3&amp;secondNumber=2"</br>
+	-6</br>
+	~ $ curl "pedro5532.pythonanywhere.com/api/calculate/divide?firstNumber=128&amp;secondNumber=16"</br>
+	8</br>
+	~ $ curl "pedro5532.pythonanywhere.com/api/calculate/power?firstNumber=2&amp;secondNumber=10"</br>
+	1024</br>
+	</code>
+	<h2>Endpoints</h2>
+    <code>/api/calculate/add</code></br>
+	<code>/api/calculate/subtract</code></br>
+	<code>/api/calculate/multiply</code></br>
+	<code>/api/calculate/divide</code></br>
+	<code>/api/calculate/power</code></br>
+	<h2>Error codes</h2>
+	<p>
+	200: success</br>
+	403: forbidden(happens when powering by numbers higher that 1000)</br>
+	404: bad request(happens when param/params is/are missing or isn't/aren't numbers)</br>
+	404: not found</br>
+	422: unprocessable content(happens when dividing by 0)</br>
+	</p>
+	<h2>Required request params</h2>
+	<code>firstNumber</code></br>
+	<code>secondNumber</code></br>
+</body>
+</html>
